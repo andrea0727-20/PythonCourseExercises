@@ -1,7 +1,8 @@
 def get_boolean_input(prompt):
     values = {"true": True, "false": False}
    
-    while (value := input(prompt).strip().lower()):
+    while True:
+        (value := input(prompt).strip().lower())
         if value in values:
             return values[value]
         else:
